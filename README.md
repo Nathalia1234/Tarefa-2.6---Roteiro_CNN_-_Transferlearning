@@ -94,6 +94,7 @@ Para executar o projeto, você precisará das seguintes bibliotecas:
 * Matplotlib
   
 Para instalar as dependências, use o seguinte comando:
+
 ![image](https://github.com/user-attachments/assets/e4459c89-13c3-470d-86ff-c3a0ed9dfebd)
 
 
