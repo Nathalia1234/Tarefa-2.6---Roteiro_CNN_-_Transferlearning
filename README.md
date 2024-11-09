@@ -52,23 +52,32 @@ Durante o treinamento, são monitoradas as seguintes métricas:
 * Precisão e Recall de Validação
 * Matriz de Confusão ao final do treinamento
 
-As melhores pesos do modelo, com base na menor loss de validação, são salvos automaticamente no arquivo `sbest_model.h5`.
+As melhores pesos do modelo, com base na menor loss de validação, são salvos automaticamente no arquivo `best_model.keras`.
 
 ## Visualização das Métricas
 Os gráficos abaixo são gerados para analisar o desempenho do modelo durante o treinamento:
 
 1. Loss durante o Treinamento e Validação: Para visualizar a convergência do modelo.
-2. Acurácia durante o Treinamento e Validação: Para avaliar a precisão geral.
-3. F1 Score de Validação: Para verificar o equilíbrio entre precisão e recall.
-4. Precisão e Recall de Validação: Para uma análise mais detalhada do desempenho em cada classe.
-5. Matriz de Confusão: Para avaliar o desempenho do modelo em cada classe específica após o treinamento.
+
+![image](https://github.com/user-attachments/assets/eedae1f9-487b-475d-9a61-4fc3332552d6)
+
+3. Acurácia durante o Treinamento e Validação: Para avaliar a precisão geral.
+
+![image](https://github.com/user-attachments/assets/923b51c2-36b3-412e-95da-0ea522851981)
+
+5. F1 Score de Validação: Para verificar o equilíbrio entre precisão e recall.
+6. Precisão e Recall de Validação: Para uma análise mais detalhada do desempenho em cada classe.
+7. Matriz de Confusão: Para avaliar o desempenho do modelo em cada classe específica após o treinamento.
+
+![image](https://github.com/user-attachments/assets/46b8272f-01c9-4af2-be04-f7d1abe9f032)
+
 
 ## Exemplo de Visualização
 ![image](https://github.com/user-attachments/assets/84d785a8-cecc-4770-9395-d67383385d8c)
 
 
 ## Predição
-O notebook `predict_model.ipynb` é usado para carregar o modelo salvo e realizar predições em novas imagens.
+O arquivo `predict_model.ipynb` é usado para carregar o modelo salvo e realizar predições em novas imagens.
 
 ## Carregamento do Modelo e Predição
 1. Carregue o modelo salvo usando o método `load_model`.
@@ -79,7 +88,7 @@ O notebook `predict_model.ipynb` é usado para carregar o modelo salvo e realiza
 # Como Executar
 ## Passo 1: Treinamento
 1. Abra o notebook `train_model.ipynb`.
-2. Execute as células para carregar o dataset, pré-processar os dados, definir o modelo, treinar e salvar os melhores pesos em `best_model.h5`.
+2. Execute as células para carregar o dataset, pré-processar os dados, definir o modelo, treinar e salvar os melhores pesos em `best_model.keras`.
 
 ## Passo 2: Predição
 1. Após o treinamento, abra o arquivo `predict_model.ipynb`.
